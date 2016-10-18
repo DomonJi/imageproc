@@ -1,5 +1,5 @@
 {
-    "name": "image processing demo",
+    "name": "ImageProc",
     "version": "1.0.0",
     "description": "image processing demo",
     "main": "./main.js",
