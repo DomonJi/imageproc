@@ -15,6 +15,7 @@ function init() {
       re = [],
       im = [];
     $('#ttfinput').change(function() {
+      $('.MyFilterSetting .FilterValue').text($('#ttfinput').val())
       spectrum.drawImage(image, 0, 0)
       var src = spectrum.getImageData(0, 0, w, h),
         data = src.data,

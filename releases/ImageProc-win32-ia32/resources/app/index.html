@@ -14,8 +14,8 @@
 <body>
     <div id="Content">
         <h3 style="display:inline">Image Processing</h3>
-        <span style="float:right;margin-top:5px;font-size:14px;">By jixiaomeng</span>
-        <p>Technology stack : CamanJs + jquery + nodejs + webpack + Electron.</p>
+        <span style="float:right;margin-top:5px;font-size:14px;margin-right:40px;">By jixiaomeng</span>
+        <p>Tech stack : CamanJs + jquery + nodejs + Electron.</p>
         <p>Click the image to choose a image file.</p>
 
         <img id="example" src="./images/woguo.jpg" style="cursor:pointer">
@@ -160,7 +160,7 @@
                     <p>FFT-2D</p>
                 </div>
 
-                <div class="FilterSetting">
+                <div class="MyFilterSetting">
                     <input type="range" min="0" max="180" step="1" value="180" id="ttfinput">
                     <span class="FilterValue">180</span>
                 </div>
@@ -202,6 +202,31 @@
 
         #spectrum {
             margin-left: 50px;
+        }
+
+        #Filters .Filter .MyFilterSetting {
+            float: right
+        }
+
+        #Filters .Filter .MyFilterSetting input[type="range"] {
+            -webkit-appearance: none!important;
+            width: 150px;
+            background-color: #434341;
+            height: 1px;
+            vertical-align: 1px
+        }
+
+        #Filters .Filter .MyFilterSetting input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none!important;
+            height: 12px;
+            width: 15px;
+            background-color: #368ad2;
+            cursor: pointer
+        }
+
+        #Filters .Filter .MyFilterSetting .FilterValue {
+            width: 30px;
+            display: inline-block
         }
     </style>
 </body>
