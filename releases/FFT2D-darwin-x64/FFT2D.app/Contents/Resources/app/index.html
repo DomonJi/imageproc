@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="lib/css/style.css">
+<link rel="stylesheet" type="text/css" href="lib/css/overcast/jquery-ui.min.css">
+<title>2D-FFT Frequency Filtering</title>
+<style>h1{font-family:"Century",serif;border-left:4px solid #00aa66;padding-left:8px;}a{color:#00aa66;}#Filter{margin:10px 0 10px 10px;}#Filter .ui-state-default{color:#00aa66;}#Filter .ui-state-hover{color:#00cc66;}#Filter .ui-state-active{color:#ffffff;}#Slider{width:300px;margin:10px 0 10px 10px;}#Slider .ui-slider-handle{border-color:#00aa66;}</style>
+</head>
+<body>
+<article>
+<header>
+<h1>Frequency Filtering using 2D-FFT by Jixiaomeng</h1>
+</header>
+<div class="wrap"><img src="images/woguo.jpg" width="256" height="256">
+<canvas id="Spectrum" width="256" height="256"></canvas>
+<canvas id="Result" width="256" height="256"></canvas>
+</div>
+<div>
+<label>滤波类型(filter type): </label>
+<div id="Filter">
+<input type="radio" id="HPF" name="filter" value="HPF" checked="checked"/>
+<label for="HPF">Highpass</label>
+<input type="radio" id="LPF" name="filter" value="LPF"/>
+<label for="LPF">Lowpass</label>
+</div>
+<label>滤波半径(filter radius): </label>
+<div id="Slider"></div>
+<div id="ViewType">
+<input type="radio" name="view" value="0" checked="checked" style="display:none"/>
+<!-- <label>off</label> -->
+<!-- <input type="radio" name="view" value="1"/> -->
+<footer>
+</footer>
+</article>
+<script src="lib/js/jquery.min.js"></script>
+<script src="lib/js/jquery-ui.min.js"></script>
+<script src="lib/js/fft.js"></script>
+<script src="lib/js/fft-client.js"></script>
+</body>
+</html>

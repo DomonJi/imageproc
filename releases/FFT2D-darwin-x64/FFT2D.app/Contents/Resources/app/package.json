@@ -1,0 +1,11 @@
+{
+    "name": "FFT2D",
+    "version": "1.0.0",
+    "description": "image processing demo",
+    "main": "./main.js",
+    "author": "domonji",
+    "license": "MIT",
+    "dependencies": {
+        "electron": "^1.4.3"
+    }
+}

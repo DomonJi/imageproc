@@ -4,11 +4,12 @@ const dialog = require('electron').dialog
 
 let win
 function createWindow() {
-  win = new BrowserWindow({width: 700, height: 840})
+  win = new BrowserWindow({width: 900, height: 600})
   win.loadURL(`file://${__dirname}/index.html`)
   win.on('closed', () => {
     win = null
   })
+  // win.webContents.openDevTools()
 }
 app.on('ready', createWindow)
 app.on('window-all-closed', () => {
